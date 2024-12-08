@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Multimedia Web-page</h2>
+    <audio controls autoplay loop muted>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support this audio file format
+    </audio>
+    <video controls muted autoplay width="640" height="360" poster="poster-image.jpg">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Your browser does not support the video file format
+    </video>
+    <form action="/database">
+        <h2>Forms:</h2>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your first name" required><br><br>
+        <label for="sname">Second Name:</label>
+        <input type="text" name="sname" id="sname" placeholder="Enter your second name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required placeholder="Enter a your password" minlength="8" maxlength="20"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" value="age" min="18" max="85"><br><br>
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <input type="radio" id="prefer not to say" name="gender" value="prefer not to say">
+        <label for="prefer not to say">Prefer not to say</label><br><br>
+        <textarea name="comments" rows="10" cols="36" placeholder="Enter your comments buddy!!!"></textarea><br><br>
+        <input type="checkbox" name="conditions" id="terms">
+        <label for="terms">I agree to the terms and conditons</label><br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
